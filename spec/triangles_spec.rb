@@ -17,4 +17,10 @@ describe(Triangle) do
     end
   end
 
+  describe("#triangle_type") do
+    it("checks to see if the inputed trinagle is an equilateral triangle") do
+      test_triangle = Triangle.new(3,3,3)
+      expect(test_triangle.triangle_type()).to(eq("Equilateral"))
+    end
+  end
 end
