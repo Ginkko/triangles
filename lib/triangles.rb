@@ -23,7 +23,6 @@ class Triangle
 
   define_method(:triangle_type) do
       if valid?().!()
-        #(@a.+(@b).>(@c) & @a.+(@c).>(@b) & @b.+(@c).>(@a)).!()
         "Not Valid"
       elsif @a.eql?(@b).&(@b.eql?(@c))
         "Equilateral"
