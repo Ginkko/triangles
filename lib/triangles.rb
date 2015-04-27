@@ -17,6 +17,10 @@ class Triangle
   define_method(:triangle_type) do
     if @a.eql?(@b).&(@b.eql?(@c))
       "Equilateral"
+    elsif @a.eql?(@b).|(@a.eql?(@c)).|(@b.eql?(@c))
+      "Isosceles"
+    else
+      "Scalene"
     end
   end
 

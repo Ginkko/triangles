@@ -22,5 +22,9 @@ describe(Triangle) do
       test_triangle = Triangle.new(3,3,3)
       expect(test_triangle.triangle_type()).to(eq("Equilateral"))
     end
+    it("checks to see if the inputed triangle is an isosceles triangle") do
+      test_triangle = Triangle.new(3,3,5)
+      expect(test_triangle.triangle_type()).to(eq("Isosceles"))
+    end
   end
 end
