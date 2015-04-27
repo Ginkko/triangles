@@ -3,11 +3,15 @@ class Triangle
     @a = a
     @b = b
     @c = c
-    @triangle = [@a, @b, @c]
+    @triangle = [a, b, c]
   end
 
-  define_method(:sort) do
-    @triangle.sort!()
+   define_method(:sort) do
+     @triangle.sort!()
+   end
+
+  define_method(:valid?) do
+    @a.+(@b).>(@c) & @a.+(@c).>(@b) & @b.+(@c).>(@a)
   end
 
 end

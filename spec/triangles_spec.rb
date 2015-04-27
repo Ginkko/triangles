@@ -10,13 +10,11 @@ describe(Triangle) do
     end
   end
 
-
-  #
-  # describe("#valid?") do
-  #   it("checks to see if the inputed traingle is mathmatecially possible")
-  #     test_triangle = Triangle.new()
-  #     test_triangle.push(3,1,2)
-  #     expect(test_triangle.valid?()).to(eq(true))
-  # end
+  describe("#valid?") do
+    it("checks to see if the inputed traingle is mathmatecially possible") do
+      test_triangle = Triangle.new(5, 4, 3)
+      expect(test_triangle.valid?()).to(eq(true))
+    end
+  end
 
 end
